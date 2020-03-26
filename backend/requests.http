@@ -1,0 +1,41 @@
+###########################ONGS###################################
+
+###Listar ongs
+GET http://localhost:3333/ongs
+Content-Type: {{contentType}
+
+### Cadastrar ongs
+POST http://localhost:3333/ongs
+content-type: application/json
+
+{
+    "name" : "ONG Covid os amigo pra almoçar",
+    "email": "caiqueeviado@soumesmo.com",
+    "whatsapp": "79998019211",
+    "city": "Fonte do prata",
+    "uf": "SE"
+}
+
+
+###########################INCIDENTES###################################
+
+
+### Cadastrar incidente
+POST http://localhost:3333/incidents
+content-type: application/json
+authorization: 849b213f
+
+{
+    "title" : "Caso 1 ",
+    "description": "nada",
+    "value": 100
+}
+
+### Listar incidentes
+GET http://localhost:3333/incidents
+content-type: application/json
+
+### Deletar incidente
+DELETE http://localhost:3333/incidents/8
+content-type: application/json
+authorization: 849b213f
